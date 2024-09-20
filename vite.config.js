@@ -1,4 +1,5 @@
 import { fileURLToPath, URL } from 'node:url';
+import { ghPages } from "vite-plugin-gh-pages";
 
 import { defineConfig } from 'vite';
 import plugin from '@vitejs/plugin-react';
@@ -35,13 +36,13 @@ const target = env.ASPNETCORE_HTTPS_PORT ? `https://localhost:${env.ASPNETCORE_H
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    plugins: [plugin()],
+    plugins: [plugin(), ghPages()],
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url))
         }
     },
-    base: "./",
+    base: "/MyWebsite/",
     server: {
         proxy: {
             '^/ping': {
