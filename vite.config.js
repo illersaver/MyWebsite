@@ -50,7 +50,7 @@ export default defineConfig({
             },
         },
     },
-    base: "./",
+    base: "/MyWebsite/",
     server: {
         proxy: {
             '^/ping': {
