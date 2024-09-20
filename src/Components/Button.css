@@ -1,0 +1,16 @@
+.coolButton {
+    font-family: monospace;
+    margin-right: 0.1%;
+    margin-top: calc(0.1vw - 4px);
+    padding: 1.15vw;
+    background-color: #242424;
+    border-color: #a3a3a3;
+    transition: border-radius 0.1s, background-color 0.1s;
+    color: #a3a3a3;
+    z-index: 1;
+}
+
+    .coolButton:hover {
+        border-radius: 10%;
+        background-color: #303030;
+    }

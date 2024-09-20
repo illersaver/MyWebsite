@@ -1,0 +1,1 @@
+E:\cSharp\MySite\mysite.client\obj\Debug\mysite.client.esproj.CoreCompileInputs.cache
