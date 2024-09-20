@@ -42,7 +42,15 @@ export default defineConfig({
             '@': fileURLToPath(new URL('./src', import.meta.url))
         }
     },
-    base: "/",
+    build: {
+        rollupOptions: {
+            input: 'index.html', // Specify the entry HTML file
+            output: {
+                entryFileNames: 'assets/[name].[hash].js',  // Ensure that JS files are properly named
+            },
+        },
+    },
+    base: "./",
     server: {
         proxy: {
             '^/ping': {
