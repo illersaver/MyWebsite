@@ -14,7 +14,7 @@ function MainPage() {
                     <div className="text">
                         <p>Sup!</p>
                         <p>I am Ilya, just another developer on the web.</p>
-                        <p>I Like C#, Godot and Space station 13.</p>
+                        <p>I like C#, Godot and Space station 13.</p>
                         <p>I dunno what to write here anymore lol.</p>
                         <img src={Me} className="me"></img>
                     </div>
