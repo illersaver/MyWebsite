@@ -1,0 +1,36 @@
+.terminalBackground {
+    position: absolute;
+    background: black;
+    left: 0px;
+    top:0px;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+.terminalText {
+    position: absolute;
+    top: calc(2.6vw + 24px);
+    color: forestgreen;
+    font-family: monospace;
+    font-size: 3vh;
+}
+
+.terminalInputDiv {
+    position: absolute;
+    left: 0px;
+    bottom: 0.5vw;
+    width: calc(100% - 5px);
+    height: 3%;
+}
+
+.terminalInput {
+    position: absolute;
+    left: 0px;
+    width: calc(100% - 5px);
+    height: 100%;
+    font-size: 3vh;
+    font-family: monospace;
+    background-color: #121212;
+    color: forestgreen;
+}

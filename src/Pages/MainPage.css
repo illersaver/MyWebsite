@@ -1,4 +1,4 @@
-.divBody1 {
+.divBody1MainPage {
     position: absolute;
     color: gray;
     background: #121212;
@@ -11,7 +11,7 @@
     overflow: hidden;
 }
 
-.divBody2 {
+.divBody2MainPage {
     position: absolute;
     background-color: #1a1a1a;
     color: gray;

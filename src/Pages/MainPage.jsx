@@ -9,8 +9,8 @@ function MainPage() {
     return (
         <div>
             <PageSelector />
-            <div className="divBody1">
-                <div className="divBody2">
+            <div className="divBody1MainPage">
+                <div className="divBody2MainPage">
                     <div className="text">
                         <p>Sup!</p>
                         <p>I am Ilya, just another developer on the web.</p>

@@ -12,7 +12,7 @@ function PageSelector() {
                 <Button text="Main Page" path="/MainPage"></Button>
                 <Button text="Test Page" path="/TestPage"></Button>
                 <Button text="Test Page" path="/TestPage"></Button>
-                <Button text="Test Page" path="/TestPage"></Button>
+                <Button text="Terminal" path="/Terminal"></Button>
             </div>
         </div>
     );
