@@ -42,6 +42,7 @@ export default defineConfig({
             '@': fileURLToPath(new URL('./src', import.meta.url))
         }
     },
+    assetsInclude: ['**/*.zip'],
     build: {
         rollupOptions: {
             input: 'index.html', // Specify the entry HTML file

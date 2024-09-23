@@ -4,13 +4,13 @@ import './PageSelector.css'
 function PageSelector() {
     return (
         <div>
-            <h1>Iller_Saver's cool very own website!</h1>
+            <h1 className="h1Selector">Iller_Saver's cool very own website!</h1>
             <div className="center">
-                <svg>
-                    <rect />
+                <svg className="svgSelector">
+                    <rect className="rectSelector"/>
                 </svg>
                 <Button text="Main Page" path="/MainPage"></Button>
-                <Button text="Test Page" path="/TestPage"></Button>
+                <Button text="Prototypes" path="/Prototypes"></Button>
                 <Button text="Test Page" path="/TestPage"></Button>
                 <Button text="Terminal" path="/Terminal"></Button>
             </div>
