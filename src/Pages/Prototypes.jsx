@@ -18,7 +18,7 @@ function Prototypes() {
 
                     <div>
                         <img src={RobustClub} className="picturesPrototypes"></img>
-                        <h5>Robust Club is a boomer-shooter set in space station 13 universe</h5>
+                        <h5>Robust Club is a boomer-shooter set in space station 13 universe.</h5>
 
                         <a href={RobustClubZip}>Download</a>
 
