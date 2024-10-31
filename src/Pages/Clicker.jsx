@@ -28,7 +28,7 @@ function Clicker() {
 
                 <div className="divBody2Clicker">
                     <UpgradeButton
-                        text="Click power X2"
+                        text="Click power X2!"
                         cash={cash}
                         setCash={setCash}
                         cost={100}
