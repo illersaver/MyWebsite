@@ -1,6 +1,7 @@
 import { fileURLToPath, URL } from 'node:url';
 import { ghPages } from "vite-plugin-gh-pages";
 
+import { defineConfig } from 'vite';
 import plugin from '@vitejs/plugin-react';
 import fs from 'fs';
 import path from 'path';
@@ -33,7 +34,7 @@ if (!fs.existsSync(certFilePath) || !fs.existsSync(keyFilePath)) {
 const target = env.ASPNETCORE_HTTPS_PORT ? `https://localhost:${env.ASPNETCORE_HTTPS_PORT}` :
     env.ASPNETCORE_URLS ? env.ASPNETCORE_URLS.split(';')[0] : 'https://localhost:7157';
 
-const defineConfig = ({
+export default defineConfig({
     plugins: [plugin(), ghPages()],
     resolve: {
         alias: {
@@ -64,5 +65,3 @@ const defineConfig = ({
         }
     }
 })
-
-export default defineConfig;
