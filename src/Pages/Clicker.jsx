@@ -23,7 +23,6 @@ function Clicker() {
                     <h1 className="text">Cash:<br />{cash}$</h1>
                     <img src={Me}
                         className="MainButtonClicker"
-                        style={{ "pointer-events": "all" }}
                         onClick={() => { mainButtonClicked() }} />
                 </div>
 
