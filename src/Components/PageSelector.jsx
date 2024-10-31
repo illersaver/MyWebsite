@@ -11,7 +11,7 @@ function PageSelector() {
                 </svg>
                 <Button text="Main Page" path="/MainPage"></Button>
                 <Button text="Prototypes" path="/Prototypes"></Button>
-                <Button text="Test Page" path="/TestPage"></Button>
+                <Button text="Clicker" path="/Clicker"></Button>
                 <Button text="Terminal" path="/Terminal"></Button>
             </div>
         </div>

@@ -1,0 +1,51 @@
+.divBody1Clicker {
+    position: absolute;
+    background-color: #121212;
+    color: gray;
+    z-index: -1;
+    width: 25%;
+    top: calc(2.6vw + 26px);
+    height: calc(100% - (2.6vw + 26px));
+    font-family: monospace;
+    text-align: center;
+}
+
+.divBody2Clicker {
+    position: absolute;
+    background-color: #1a1a1a;
+    color: gray;
+    z-index: -1;
+    left: 25%;
+    top: calc(2.6vw + 30px);
+    width: 75%;
+    box-shadow: 0px 0px 20px 10px black;
+    height: calc(100% - (2.6vw + 30px));
+    text-align: center;
+    font-size: calc(15px + 1vw);
+    line-height: 0.9;
+    font-family: monospace;
+    overflow: auto;
+}
+
+.MainButtonClicker {
+    background-color: #1a1a1a;
+    box-shadow: 0px 0px 20px 10px black;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 15vw;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+    .MainButtonClicker:hover {
+        transition: height 0.3s;
+        height: 16vw;
+    }
+
+    .MainButtonClicker:active {
+        transition: height 0.3s;
+        height: 14vw;
+    }

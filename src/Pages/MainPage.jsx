@@ -22,10 +22,12 @@ function MainPage() {
                     <div className="links">
                         <button
                             className="steamButton"
-                            onClick={() => { window.open('https://steamcommunity.com/id/illersaver/', '_blank') }}>Steam</button>
+                            onClick={() => { window.open('https://steamcommunity.com/id/illersaver/', '_blank') }}>Steam
+                        </button>
                         <button
                             className="discordButton"
-                            onClick={() => { window.open('https://discord.com/users/530120192290979850', '_blank') }}>Discord</button>
+                            onClick={() => { window.open('https://discord.com/users/530120192290979850', '_blank') }}>Discord
+                        </button>
                     </div>
                 </div>
             </div>
