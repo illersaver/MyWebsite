@@ -24,12 +24,14 @@ function Clicker() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCash(cash + passiveIncome.current);
-            localStorage.setItem("cash", cash + passiveIncome.current);
+            setCash(prevCash => {
+                localStorage.setItem("cash", prevCash + passiveIncome.current);
+                return prevCash + passiveIncome.current;
+            });
         }, 1000);
 
         return () => clearInterval(interval);
-    }, [cash]);
+    }, []);
 
     function mainButtonClicked(){
         setCash(cash + clickingPower.current);
