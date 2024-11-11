@@ -19,10 +19,12 @@ function Clicker() {
             passiveIncome.current = parseInt(localStorage.getItem('passiveIncome'));
         }
 
-        // console.log(JSON.stringify(localStorage));
-    }, []);
+        if (localStorage.hasOwnProperty('clickingPower')) {
+            clickingPower.current = parseInt(localStorage.getItem('clickingPower'));
+        }
 
-    useEffect(() => {
+        // console.log(JSON.stringify(localStorage));
+
         const interval = setInterval(() => {
             setCash(prevCash => {
                 localStorage.setItem("cash", prevCash + passiveIncome.current);
