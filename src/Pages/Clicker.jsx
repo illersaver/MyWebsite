@@ -6,21 +6,21 @@ import './Clicker.css'
 import UpgradeButton from '../Components/Clicker/UpgradeButton.jsx';
 
 function Clicker() {
-    const [cash, setCash] = useState(0);
-    const clickingPower = useRef(1);
-    const passiveIncome = useRef(0);
+    const [cash, setCash] = useState(0n);
+    const clickingPower = useRef(1n);
+    const passiveIncome = useRef(0n);
 
     useEffect(() => {
         if (localStorage.hasOwnProperty('cash')) {
-            setCash(parseInt(localStorage.getItem('cash')));
+            setCash(BigInt(localStorage.getItem('cash')));
         }
 
         if (localStorage.hasOwnProperty('passiveIncome')) {
-            passiveIncome.current = parseInt(localStorage.getItem('passiveIncome'));
+            passiveIncome.current = BigInt(localStorage.getItem('passiveIncome'));
         }
 
         if (localStorage.hasOwnProperty('clickingPower')) {
-            clickingPower.current = parseInt(localStorage.getItem('clickingPower'));
+            clickingPower.current = BigInt(localStorage.getItem('clickingPower'));
         }
 
         // console.log(JSON.stringify(localStorage));
@@ -47,7 +47,7 @@ function Clicker() {
             <div className="divBody1MainPage">
 
                 <div className="divBody1Clicker">
-                    <h1 className="text">Cash:<br />{cash}$</h1>
+                    <h1 className="text">Cash:<br />{String(cash)}$</h1>
                     <img src={Me}
                         className="MainButtonClicker"
                         onClick={() => { mainButtonClicked() }} />
@@ -61,7 +61,7 @@ function Clicker() {
                         cost={100}
                         costMultiplier={2.9}
                         function={() => {
-                            clickingPower.current *= 2;
+                            clickingPower.current *= 2n;
                             localStorage.setItem("clickingPower", clickingPower.current);
                         }}>
                     </UpgradeButton>
@@ -71,9 +71,10 @@ function Clicker() {
                         cash={cash}
                         setCash={setCash}
                         cost={100}
-                        costMultiplier={1.1}
+                        costMultiplier={1.6}
                         function={() => {
-                            passiveIncome.current += 5;
+                            passiveIncome.current += 1n;
+                            passiveIncome.current += (passiveIncome.current * 50n) / 100n;
                             localStorage.setItem("passiveIncome", passiveIncome.current);
                         }}>
                     </UpgradeButton>

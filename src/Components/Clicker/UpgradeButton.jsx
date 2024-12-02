@@ -12,11 +12,11 @@ function UpgradeButton(props)
     }, []);
 
     function buy() {
-        if (props.cash - cost >= 0) {
+        if (props.cash - BigInt(cost) >= 0) {
             props.function();
             setCost((cost * props.costMultiplier).toFixed(0));
             localStorage.setItem(props.text, (cost * props.costMultiplier).toFixed(0))
-            props.setCash(props.cash - cost);
+            props.setCash(props.cash - BigInt(cost));
         }
     }
 

@@ -7,6 +7,7 @@
     top: calc(2.6vw + 26px);
     height: calc(100% - (2.6vw + 26px));
     font-family: monospace;
+    word-wrap: break-word;
     text-align: center;
 }
 
